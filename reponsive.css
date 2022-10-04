@@ -1,0 +1,117 @@
+
+
+@media (max-width: 448px) {
+  .section1 .content {
+    position: relative;
+    top: 130px;
+    margin-left: 30px;
+  }
+
+  .section1 .content h1 {
+    font-size: 30px;
+    letter-spacing: 3px;
+  }
+
+  .section1 .content p {
+    font-size: 22px;
+    padding-bottom: 20px;
+  }
+
+  .section1 .content button {
+    padding: 10px 30px;
+  }
+
+  .phone img {
+    width: 370px;
+  }
+
+  header {
+    height: 100%;
+  }
+  .section1 .content {
+    position: relative;
+    top: -150px;
+    margin: 20px;
+  }
+  .section1 {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: flex-end;
+  }
+
+  .section1 .content {
+    position: static;
+    top: 150px;
+    margin-top: 70px;
+  }
+
+  /****************************************************************
+
+
+
+*/
+.how-to-use-container h1{
+  font-size: 30px;
+  margin-top: 20px;
+}
+  .thePhone-and-features {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .features-content {
+    text-align: center;
+  }
+  .main-features {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .main-features .card {
+    object-fit: cover;
+    margin: 0 20px;
+    padding: 10px;
+    border-radius: 3px;
+    text-align: center;
+  }
+  .card h2 {
+    text-align: center;
+  }
+  .step {
+    flex-direction: column;
+  }
+
+  .step1-content {
+    text-align: center;
+  }
+
+  .the-team {
+    flex-direction: column;
+  }
+  .person1 img {
+    width: 100%;
+    border-radius: 50%;
+  }
+  .team-content h1 {
+    font-size: 30px;
+  }
+  .step1 {
+    display: flex;
+    align-items: center;
+  }
+  .step2 {
+    display: flex;
+    align-items: center;
+  }
+  .step3 {
+    display: flex;
+    align-items: center;
+  }
+  .step4 {
+    display: flex;
+    align-items: center;
+  }
+}

@@ -1,0 +1,164 @@
+/*
+*************************************************** the default styling formart
+*************************************************** */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+/* Header css ruleset */
+header {
+  background-image: url(./asset/rice-field-green-grass-landscape-sunset_30824-134.jpeg);
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-position: center;
+  overflow: hidden;
+}
+.section1 {
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: flex-end;
+}
+
+.section1 .content {
+  position: relative;
+  top: 150px;
+  margin-left: 30px;
+}
+
+.section1 .content h1 {
+  font-size: 60px;
+  letter-spacing: 3px;
+}
+
+.section1 .content p {
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
+.section1 .content button {
+  padding: 15px 50px;
+  border-radius: 50px;
+  font-size: 20px;
+  border: 2px solid white;
+  background-color: unset;
+  color: white;
+  font-weight: 500;
+  transition: all 0.5s;
+}
+
+.section1 .content button:hover {
+  background-color: white;
+  color: black;
+}
+/* 
+***************************************************
+the Fetures sectons sections
+*************************************************** */
+.features-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 20px 30px;
+}
+.features-content h1 {
+  padding: 10px 0;
+  text-align: center;
+}
+.main-features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.thePhone-and-features {
+  display: flex;
+  align-items: center;
+}
+
+
+/* ****************************
+ how to use section 
+ *****************************/
+
+
+.how-to-use-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.how-to-use-container h1 {
+  text-align: center;
+  font-size: 50px;
+}
+.step1-content{
+  margin: 10px 20px;
+}
+.step1 {
+  display: flex;
+  align-items: center;
+}
+.step2 {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+.step3 {
+  display: flex;
+  align-items: center;
+}
+.step4 {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.step1 img,
+.step2 img,
+.step3 img,
+.step4 img {
+  width: 300px;
+}
+
+/*
+***************************
+ Th team css rule set
+*/
+
+.team-container {
+  background: linear-gradient(80deg, rgba(255, 217, 0, 0.274), rgba(0, 128, 0, 0.384));
+  padding: 50px;
+  text-align: center;
+}
+.the-team {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 30px;
+}
+.person1 img {
+  width: 100%;
+  border-radius: 10px;
+}
+.team-content {
+  margin-bottom: 50px;
+}
+
+.team-content h1 {
+  font-size: 80px;
+}
+
+/*
+***************************
+ Th contact us css rule set
+*/
+.contact-us{
+  margin: 70px;
+  text-align: center;
+}
+.contact-us h1{
+  margin-bottom: 50px;
+}
