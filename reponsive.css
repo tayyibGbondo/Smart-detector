@@ -1,6 +1,50 @@
-
-
-@media (max-width: 448px) {
+@media (max-width: 768px) {
+  /* the navigation css ruleset */
+nav {
+  background-color: yellowgreen;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  box-sizing: border-box;
+}
+nav ul {
+  list-style: none;
+  display: block;
+  margin-right: 200px;
+}
+.is-active.nav-links{
+  display: none;
+  transition: 0.7s;
+}
+nav ul li {
+  font-size: 20px;
+  margin-top: 20px;
+}
+nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+/* the toogle btn */
+.toggle-btn span {
+  background-color: black;
+  width: 50px;
+  height: 8px;
+  display: block;
+  margin-top: 5px;
+  border-radius: 10px;
+}
+.toggle-btn {
+  position: fixed;
+  right: 1.5%;
+  top: 1.5%;
+  display: block;
+  z-index: 1;
+}
   .section1 .content {
     position: relative;
     top: 130px;
@@ -25,8 +69,12 @@
     width: 370px;
   }
 
+  .overlay{
+    height: 100vh;
+  }
+
   header {
-    height: 100%;
+    height: 100vh;
   }
   .section1 .content {
     position: relative;
@@ -52,10 +100,10 @@
 
 
 */
-.how-to-use-container h1{
-  font-size: 30px;
-  margin-top: 20px;
-}
+  .how-to-use-container h1 {
+    font-size: 30px;
+    margin-top: 20px;
+  }
   .thePhone-and-features {
     display: flex;
     align-items: center;
@@ -113,5 +161,38 @@
   .step4 {
     display: flex;
     align-items: center;
+  }
+  /* 
+***************************
+the social media handle css ruleset 
+***************************
+*/
+  .handels {
+    max-width: 100%;
+    display: flex;
+    margin: 0 auto;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  .handels h1 {
+    margin: 0 10px;
+  }
+  .handels h1 a {
+    color: blue;
+    transition: 0.2s;
+  }
+  .handels h1 a:hover {
+    opacity: 0.7;
+  }
+  .donate {
+    background-color: aliceblue;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .donate p {
+    margin: 10px 0;
   }
 }

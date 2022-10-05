@@ -6,24 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./reponsive.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anton&family=Crimson+Text&family=Cuprum&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Kanit&family=Yanone+Kaffeesatz:wght@300&display=swap');
+    </style>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    
+
     <title>Smart Detect</title>
 </head>
 <body>
+
+    <nav>
+        <h2 class="logo">LOGO</h2>
+        <div class="nav-links is-active">
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#features">Features</a>
+                </li>
+                <li>
+                    <a href="#team">Team</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="toggle-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+  
    <!--
     **************The heading section*****************
     the header element have one main conainer named "section1" that wrap to element as his childrens.
     1. content -- hold in the contenets on the header (the h1 and the ps elements.)
     2. phone -- element hold in an image of the sngle phone in the header.
-    3. Button -- the donload now button.
+    3. Button -- the download now button.
  -->
     <header> 
+        <div class="overlay"></div>
        <div class="section1">
          <div class="content">
-            <h1>SMART DETECT</h1>
+            <h1>SMART DETECTOR</h1>
             <p>Real Time Disease and Pest Detector</p>
             <p>Smart Detect is a flexible and easy use application for aiding in the identification of rice diseases and pests .
                 The aim is to help farmers to identify problems in the growing crop and Prevent loss of rice yield.
-                
                 !</p>
             <button>Download Now</button>
          </div>
@@ -43,7 +79,7 @@
      -->
 
     <div class="features-container">
-        <div class="features-content">
+        <div class="features-content"  id="features">
             <h1>Features</h1>
             <p>Smart Detect is mobile application that help farmer to detect rice disease and pest in real-time without any internet connection and prevents huge loss by taking precautions earlier.</p>
         </div>
@@ -53,24 +89,24 @@
 
             <div class="main-features">
                 <div class="card card1">
-                    <h2>Portable</h2>
+                    <h2><i class="bi bi-app"></i>Portable</h2>
                 <p>Use Smart Detect wherever you are. 
                     No data connection required once data sources are downloaded .</p>
                 </div>
                 <div class=" card card2">
-                    <h2>Android Support</h2>
+                    <h2><img src="./asset/icons/android.svg" alt=""> Android Support</h2>
                 <p>Smart Detect supports Android.</p>
                 </div>
                 <div class="card card3">
-                    <h2>Optimized Layout</h2>
+                    <h2><i class="bi bi-grid-3x3-gap-fill"></i>Optimized Layout</h2>
                 <p>The app is optimized to work on both phones and tablets and varying screen sizes.</p>
                 </div>
                 <div class="card card4">
-                    <h2>Material Design</h2>
+                    <h2><i class="bi bi-arrow-up-right-circle-fill"></i>Material Design</h2>
                 <p>Smart Detect follows Google's Material Design Guidelines.</p>
                 </div>
                 <div class="card card5">
-                    <h2>Upload Image</h2>
+                    <h2><i class="bi bi-box-arrow-in-down"></i> Import Image</h2>
                 <p>Upload infected plant Image and Smart Detect Will Anilize and gives you the result</p>
                 </div>
                 <div class="card card6">
@@ -126,9 +162,10 @@
             ************************* the team container****************************
             the team-container have divs for the team-content and a the-teams that contain a div per person.
         -->
-    <div class="team-container">
+    <div class="team-container" id="team">
         <div class="team-content">
-            <h1>Team</h1>
+            <h1><i class="bi bi-people-fill"></i></h1>
+            <h1>Meet The Team</h1>
             <p>Smart Detect is Developed at the Orange Digital Center by the Grow Smart Group</p>
         </div>
 
@@ -137,30 +174,61 @@
             <div class="person1">
                 <img src="./asset/profile.jpeg" alt="">
                 <h1>Tayyib</h1>
-                <h2>Software Developer</h2>
+                <h4>Software Developer</h4>
             </div>
 
             <div class="person1">
                 <img src="./asset/profile.jpeg" alt="">
                 <h1>Tayyib</h1>
-                <h2>Software Developer</h2>
+                <h4>Software Developer</h2>
             </div>
 
             <div class="person1">
                 <img src="./asset/profile.jpeg" alt="">
                 <h1>Tayyib</h1>
-                <h2>Software Developer</h2>
+                <h4>Software Developer</h4>
             </div>
         </div>
     </div>
        <!--************************* the of team container****************************-->
 
          <!--************************* the contact us section****************************-->
-       <div class="contact-us">
+       <div class="contact-us" id="contact">
         <h1>Contact Us</h1>
         <p>If you would like to get in touch contact us to talk about SMART DETECTOR or any other smart agriculture projects, please get in toch via Twitter, Facebook or Email</p>
 
-        <div class="handels"></div>
+        <div class="handels">
+            <h1>
+                <a href="">
+                    <i class="bi-twitter"></i>
+                </a>
+            </h1>
+            <h1>
+                <a href="">
+                    <i class="bi-facebook"></i>
+                </a>
+            </h1>
+            <h1>
+                <a href="">
+                    <i class="bi bi-envelope-fill"></i>
+                </a>
+            </h1>
+        </div>
        </div>
+        <!--************************* end of the contact us section****************************-->
+
+
+         <!--************************* the Donation section****************************-->
+         <div class="donate">
+             <p>Help assist our developer by giving a small donation. Every donation is appraciated!</p>
+             <button type="button">DONATE NOW</button>
+         </div>
+                 <!--************************* end of Donation section****************************-->
+
+        <footer>
+            <h4>copyright@2022 All rights reserved</h4>
+        </footer>
+
+<script src="./js/app.js"></script>
 </body>
-</html>
+</html>     
