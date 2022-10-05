@@ -1,0 +1,320 @@
+/*
+*************************************************** the default styling formart
+*************************************************** */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+/* the navigation css ruleset */
+nav {
+  background-color: yellowgreen;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  box-sizing: border-box;
+}
+.rem.logo{
+  display: none;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  margin-right: 100px;
+}
+nav ul li {
+  font-size: 20px;
+  margin-left: 40px;
+}
+nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.6s;
+}
+.inmotion:hover,
+.inmotion:focus, 
+.inmotion:active {
+ animation-name: nav-nation;
+ animation-duration: 0.5s;
+ animation-fill-mode: forwards;
+}
+@keyframes nav-nation {
+  from{
+    opacity: 1;
+  } to{
+    opacity: 0.8; border-bottom: 3px solid rgba(0, 0, 0, 0.603);
+  }
+}
+/* the toogle btn */
+.toggle-btn span {
+  background-color: black;
+  width: 60px;
+  height: 5px;
+  display: block;
+  margin-top: 5px;
+  border-radius: 10px;
+}
+.toggle-btn {
+  display: none;
+}
+/* the overlay of the header */
+.overlay{
+  background-color: rgba(0, 0, 0, 0.685);
+  width: 100%;
+  height: 600px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-sizing: border-box;
+  object-fit: cover;
+}
+/* Header css ruleset */
+header {
+  background-image: url(./asset/rice-field-green-grass-landscape-sunset_30824-134.jpeg);
+  height: 600px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-position: center;
+  overflow: hidden;
+}
+.section1 {
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: flex-end;
+  position: relative;
+  z-index: 1 1 ;
+  color: white;
+}
+
+.section1 .content {
+  position: relative;
+  top: 150px;
+  margin-left: 30px;
+}
+
+.section1 .content h1 {
+  font-size: 60px;
+  letter-spacing: 3px;
+  margin-top: 20px;
+font-family: 'Crimson Text', serif;
+}
+
+.section1 .content p {
+  font-size: 20px;
+  padding-bottom: 20px;
+  font-family: 'Cuprum', sans-serif;
+}
+
+.section1 .content button {
+  padding: 15px 50px;
+  border-radius: 50px;
+  font-size: 20px;
+  border: 2px solid white;
+  background-color: unset;
+  color: white;
+  font-weight: 500;
+  transition: all 0.5s;
+}
+
+.section1 .content button:hover {
+  background-color: white;
+  color: black;
+}
+/* 
+***************************************************
+the Fetures sectons sections
+*************************************************** */
+.features-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 20px 30px;
+}
+.features-content h1 {
+  padding: 10px 0;
+  text-align: center;
+  font-family: 'Crimson Text', serif;
+}
+.main-features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+.thePhone-and-features {
+  display: flex;
+  align-items: center;
+}
+
+.card p {
+  margin: 20px 0;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-weight: 600;
+  opacity: 0.9;
+}
+
+.card h2{
+  font-family: 'Crimson Text', serif;
+}
+
+/* ****************************
+ how to use section 
+ *****************************/
+
+.how-to-use-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.how-to-use-container h1 {
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Crimson Text', serif;
+}
+.step h2{
+  font-family: 'Kanit', sans-serif;
+}
+.step1-content {
+  margin: 10px 20px;
+}
+.step1 {
+  display: flex;
+  align-items: center;
+}
+.step2 {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+.step3 {
+  display: flex;
+  align-items: center;
+}
+.step4 {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.step1 img,
+.step2 img,
+.step3 img,
+.step4 img {
+  width: 300px;
+}
+
+/*
+***************************
+ Th team css rule set
+*/
+
+.team-container {
+  background: linear-gradient(
+    80deg,
+    rgba(255, 217, 0, 0.274),
+    rgba(0, 128, 0, 0.384)
+  );
+  padding: 50px;
+  text-align: center;
+}
+.the-team {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 30px;
+}
+.person1 img {
+  width: 100%;
+  border-radius: 10px;
+}
+.team-content {
+  margin-bottom: 50px;
+}
+
+.team-content h1 {
+  font-size: 80px;
+  font-family: 'Crimson Text', serif;
+}
+
+/*
+***************************
+ Th contact us css rule set
+*/
+.contact-us {
+  margin: 70px;
+  text-align: center;
+}
+.contact-us h1 {
+  margin-bottom: 50px;
+  font-family: 'Crimson Text', serif;
+}
+
+/* 
+***************************
+the social media handle css ruleset 
+***************************
+*/
+.handels {
+  max-width: 100px;
+  display: flex;
+  margin: 0 auto;
+  padding: 20px;
+}
+.handels h1 {
+  margin: 0 10px;
+}
+.handels h1 a {
+  color: blue;
+  transition: 0.2s;
+}
+.handels h1 a:hover {
+  opacity: 0.7;
+}
+/* 
+***************************
+the donate section css ruleset 
+***************************
+*/
+.donate {
+  background-color: aliceblue;
+  padding: 20px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.donate button {
+  padding: 10px 20px;
+  margin-left: 30px;
+  background-color: green;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 3px;
+  transition: 0.3;
+}
+.donate button:hover {
+  background-color: rgb(8, 141, 8);
+}
+/* 
+***************************
+the Footer section css ruleset 
+***************************
+*/
+
+footer {
+  background-color: darkgray;
+  color: black;
+  padding: 20px;
+  text-align: center;
+}
