@@ -36,9 +36,9 @@ nav ul li a {
   font-weight: bold;
   transition: 0.6s;
 }
-.inmotion:hover,
-.inmotion:focus, 
-.inmotion:active {
+nav ul li a:hover,
+nav ul li a:focus, a
+nav ul li a:active {
  animation-name: nav-nation;
  animation-duration: 0.5s;
  animation-fill-mode: forwards;
@@ -47,7 +47,7 @@ nav ul li a {
   from{
     opacity: 1;
   } to{
-    opacity: 0.8; border-bottom: 3px solid rgba(0, 0, 0, 0.603);
+    opacity: 0.5; 
   }
 }
 /* the toogle btn */
@@ -227,7 +227,7 @@ the Fetures sectons sections
   padding: 50px;
   text-align: center;
 }
-.the-team {
+.the-team { 
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
@@ -323,4 +323,43 @@ footer {
   color: black;
   padding: 20px;
   text-align: center;
+}
+
+
+/* the popup notifaction */
+.popup{
+  background-color: rgba(0, 0, 0, 0.535);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+.popup.not-live{
+  display: none;
+}
+.popup-card{
+  background-color: yellow;
+  height: 100px;
+  width: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  top: 300px;
+}
+.popup-card p{
+  margin-bottom: 20px;
+}
+.popup-card button{
+  padding: 10px 50px;
+  font-weight: 800;
+  border-radius: 4px;
+  border: none;
+  background-color: green;
+  color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.603);
 }

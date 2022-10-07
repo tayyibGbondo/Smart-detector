@@ -195,4 +195,22 @@ the social media handle css ruleset
   .donate p {
     margin: 10px 0;
   }
+
+    /* 
+***************************
+the Popup alert notifacation for the download option
+***************************
+*/
+
+.popup-card{
+  background-color: yellow;
+  height: 100px;
+  width: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  top: 300px;
+}
 }
