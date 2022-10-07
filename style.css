@@ -351,6 +351,14 @@ footer {
   position: relative;
   top: 300px;
 }
+.popup-card{
+  animation-name: popup-animation;
+  animation-duration: 0.5s;
+}
+@keyframes popup-animation {
+  from{transform: scaleY(0.5);}
+  to{transform: scaleY(1);}
+}
 .popup-card p{
   margin-bottom: 20px;
 }
