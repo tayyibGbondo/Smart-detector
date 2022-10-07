@@ -236,6 +236,12 @@ the Fetures sectons sections
 .person1 img {
   width: 100%;
   border-radius: 10px;
+  transition: 0.4s;
+}
+.person1 img:hover{
+  transform: scale(0.9);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.603);
+  border-radius: 30px;
 }
 .team-content {
   margin-bottom: 50px;
